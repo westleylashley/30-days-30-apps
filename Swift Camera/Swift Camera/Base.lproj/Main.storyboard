@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swift_Camera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qoV-k7-iuQ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQy-L8-fcl">
+                                        <rect key="frame" x="20" y="552" width="335" height="75"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="onTapTakePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tiv-cN-z2C"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="lQy-L8-fcl" secondAttribute="trailing" constant="20" id="84t-3B-eDd"/>
+                                    <constraint firstItem="lQy-L8-fcl" firstAttribute="leading" secondItem="qoV-k7-iuQ" secondAttribute="leading" constant="20" id="8BM-yp-Bwb"/>
+                                    <constraint firstItem="lQy-L8-fcl" firstAttribute="top" secondItem="qoV-k7-iuQ" secondAttribute="top" constant="552" id="PbA-GQ-wFD"/>
+                                    <constraint firstAttribute="bottom" secondItem="lQy-L8-fcl" secondAttribute="bottom" constant="20" id="cYW-f3-vVL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qoV-k7-iuQ" secondAttribute="bottom" id="0bB-OX-tOj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qoV-k7-iuQ" secondAttribute="trailing" id="2Zs-DW-w0S"/>
+                            <constraint firstItem="qoV-k7-iuQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9m2-cu-AK8"/>
+                            <constraint firstItem="qoV-k7-iuQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HK6-Qn-rFb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="previewView" destination="qoV-k7-iuQ" id="TuD-hV-Vp3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
